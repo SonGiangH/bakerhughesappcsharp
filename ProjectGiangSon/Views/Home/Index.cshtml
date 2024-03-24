@@ -1,0 +1,228 @@
+﻿@using ProjectGiangSon.Data
+@model List<Slide>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div>
+        <a><b>Current sensor offset: @ViewBag.SensorOffset</b></a>
+    </div>
+    <div>
+        <a><b>Current define bur30m: @ViewBag.Bur30m</b></a>
+    </div>
+    <main role="main" class="pb-3">
+        <div class="nav">
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="table-success">
+                <td style="text-align:center; width:100px; vertical-align: middle;">DP Length</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;">Bit Depth</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;">Survey Depth</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">Inc</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">Azi</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;">Meters SEEN</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">BUR/m</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">BUR/30m</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">Inc BIT</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;">Tool Face</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">From</td>
+                <td style="text-align:center; width:80px; vertical-align: middle;">To</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;">Total did slide</td>
+                <td style="text-align:center; width:100px; vertical-align: middle;"></td>
+                <td style="text-align:center; width:100px; vertical-align: middle;"></td>
+                </thead>
+                <tbody>
+                    @if (Model == null)
+                    {
+                        <tr>
+                            <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">0</td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>0</td>
+                                        <td>0</td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="text-align:center; width:100px;">
+                                <a href="@Url.Action("Delete","Home", new {id=0})">Delete</a>
+                                <a>|</a>
+                                <a href="@Url.Action("Edit","Home")">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                    else
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">@item.DpLength</td>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">@item.BitDepth</td>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">@item.SurveyDepth</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Inc</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Azo</td>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">@item.MetterSeen</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Burm</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Bur30m</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Incbit</td>
+                                <td style="text-align:center; width:100px height:30px; vertical-align: middle;">@item.ToolFace</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.St</td>
+                                <td style="text-align:center; width:80px; height:30px; vertical-align: middle;">@item.Ed</td>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">@item.Total</td>
+                                <td style="text-align:center; width:100px; height:30px; vertical-align: middle;">
+                                    @item.Tmp1  |  @item.Tmp2
+                                </td>
+                                <td style="text-align:center; width:80px; height:30px;">
+                                    <a href="@Url.Action("Delete","Home", new {id = item.Id})">Delete</a>
+                                    <a>|</a>
+                                    <a href="@Url.Action("Edit","Home",new {id = item.Id})">Edit</a>
+                                </td>
+                            </tr>
+                        }
+                </tbody>
+            </table>
+        </div>
+    </main>
+</div>
+<div>
+    <table>
+        <tr>
+            <td>
+                @using (Html.BeginForm("AddDarkSlide", "Home", FormMethod.Post))
+                {
+                    <div class="bs-tooltip-auto">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>Survey</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="survey_depth" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Inc</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="inc" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Azi</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="azi" />
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top: 10px;">
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                }
+            </td>
+            <td>
+                <div style="display:block; width:90px;">
+                </div>
+            </td>
+            <td>
+                @using (Html.BeginForm("AddGreenSlide", "Home", FormMethod.Post))
+                {
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Tool Face</label>
+                            </td>
+                            <td>
+                                <input type="text" name="ToolFace" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>From</label>
+                            </td>
+                            <td>
+                                <input type="text" name="St" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>To</label>
+                            </td>
+                            <td>
+                                <input type="text" name="Ed" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                }
+            </td>
+            <td>
+                <div style="display:block; width:90px;">
+                </div>
+            </td>
+            <td>
+                @using (Html.BeginForm("SetSensorOffset", "Home", FormMethod.Post))
+                {
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Sensor offset</label>
+                            </td>
+                            <td>
+                                <input type="text" name="offset" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div>
+                        <button class="btn btn-success">Submit</button>
+
+                    </div>
+                }
+            </td>
+            <td>
+                <div style="display:block; width:90px;">
+                </div>
+            </td>
+            <td>
+                @using (Html.BeginForm("SetDefineBur", "Home", FormMethod.Post))
+                {
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Define BUR30/m</label>
+                            </td>
+                            <td>
+                                <input type="text" name="bur30m" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top: 10px;">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
+                }
+            </td>
+        </tr>
+    </table>
+</div>
+<div>
+    <a href="@Url.Action("ClearData","Home")">Clear data</a>
+</div>
+
+
+

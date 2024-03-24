@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|c:\\users\\giang\\desktop\\projectgiangson\\projectgiangson\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|solutionrelative:projectgiangson\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|c:\\users\\giang\\desktop\\projectgiangson\\projectgiangson\\data\\slide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|solutionrelative:projectgiangson\\data\\slide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|c:\\users\\giang\\desktop\\projectgiangson\\projectgiangson\\data\\giangsoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34ED5082-8192-4606-ABFD-0206F6BBF6E6}|ProjectGiangSon\\ProjectGiangSon.csproj|solutionrelative:projectgiangson\\data\\giangsoncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Slide.cs",
+              "DocumentMoniker": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Data\\Slide.cs",
+              "RelativeDocumentMoniker": "ProjectGiangSon\\Data\\Slide.cs",
+              "ToolTip": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Data\\Slide.cs",
+              "RelativeToolTip": "ProjectGiangSon\\Data\\Slide.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T23:33:57.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GiangSonContext.cs",
+              "DocumentMoniker": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Data\\GiangSonContext.cs",
+              "RelativeDocumentMoniker": "ProjectGiangSon\\Data\\GiangSonContext.cs",
+              "ToolTip": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Data\\GiangSonContext.cs",
+              "RelativeToolTip": "ProjectGiangSon\\Data\\GiangSonContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:04:43.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ProjectGiangSon\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\giang\\Desktop\\ProjectGiangSon\\ProjectGiangSon\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ProjectGiangSon\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA8BAAAAAAAAAAAiwDoAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T11:30:45.094Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

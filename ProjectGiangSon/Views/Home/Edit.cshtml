@@ -1,0 +1,140 @@
+﻿@model ProjectGiangSon.Data.Slide
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Slide</h1>
+<div>
+    <a asp-action="Index">Back to Home</a>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SaveEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="DpLength" class="control-label" hidden></label>
+                <input asp-for="DpLength" class="form-control" hidden />
+                <span asp-validation-for="DpLength" class="text-danger" hidden></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BitDepth" class="control-label" hidden></label>
+                <input asp-for="BitDepth" class="form-control" hidden />
+                <span asp-validation-for="BitDepth" class="text-danger" hidden></span>
+            </div>
+            
+            <div class="form-group">
+                <label asp-for="MetterSeen" class="control-label" hidden></label>
+                <input asp-for="MetterSeen" class="form-control" hidden />
+                <span asp-validation-for="MetterSeen" class="text-danger" hidden></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Burm" class="control-label" hidden></label>
+                <input asp-for="Burm" class="form-control" hidden />
+                <span asp-validation-for="Burm" class="text-danger" hidden></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Bur30m" class="control-label" hidden></label>
+                <input asp-for="Bur30m" class="form-control" hidden />
+                <span asp-validation-for="Bur30m" class="text-danger" hidden></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Incbit" class="control-label" hidden></label>
+                <input asp-for="Incbit" class="form-control" hidden />
+                <span asp-validation-for="Incbit" class="text-danger" hidden></span>
+            </div>
+            
+            
+           
+            <div class="form-group">
+                <label asp-for="Tmp1" class="control-label" hidden></label>
+                <input asp-for="Tmp1" class="form-control" hidden/>
+                <span asp-validation-for="Tmp1" class="text-danger" hidden></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tmp2" class="control-label" hidden></label>
+                <input asp-for="Tmp2" class="form-control" hidden />
+                <span asp-validation-for="Tmp2" class="text-danger" hidden></span>
+            </div>
+            
+            <table>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="SurveyDepth" class="control-label"></label>
+                            <input asp-for="SurveyDepth" class="form-control" />
+                            <span asp-validation-for="SurveyDepth" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="ToolFace" class="control-label"></label>
+                            <input asp-for="ToolFace" class="form-control" />
+                            <span asp-validation-for="ToolFace" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="Inc" class="control-label"></label>
+                            <input asp-for="Inc" class="form-control" />
+                            <span asp-validation-for="Inc" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="St" class="control-label"></label>
+                            <input asp-for="St" class="form-control" />
+                            <span asp-validation-for="St" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="Azo" class="control-label"></label>
+                            <input asp-for="Azo" class="form-control" />
+                            <span asp-validation-for="Azo" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="Ed" class="control-label"></label>
+                            <input asp-for="Ed" class="form-control" />
+                            <span asp-validation-for="Ed" class="text-danger"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label asp-for="Total" class="control-label" hidden></label>
+                            <input asp-for="Total" class="form-control" hidden />
+                            <span asp-validation-for="Total" class="text-danger" hidden></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <p>
+        
+
+    </p>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
